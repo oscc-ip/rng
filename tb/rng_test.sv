@@ -64,6 +64,10 @@ task automatic RNGTest::test_gen_random_num();
     this.read(`RNG_VAL_ADDR);
     $display("%t rd_data: %d", $time, super.rd_data, this.cnt);
     if (this.num_qu.exists(super.rd_data)) begin
+      $display("%t exist data: %d", $time, super.rd_data);
+      break;
+    end else if (cnt >= 10000) begin
+      $display("%t rng test done", $time);
       break;
     end else begin
       this.num_qu[super.rd_data] = cnt;
