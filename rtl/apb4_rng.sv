@@ -29,7 +29,7 @@ module apb4_rng (
   assign apb4.pslverr    = 1'b0;
 
   assign s_rng_ctrl_en   = s_apb4_wr_hdshk && s_apb4_addr == `RNG_CTRL;
-  assign s_rng_ctrl_d    = s_rng_ctrl_en ? apb4.pwdata[`RNG_CTRL_WIDTH-1:0] : s_rng_ctrl_q;
+  assign s_rng_ctrl_d    = apb4.pwdata[`RNG_CTRL_WIDTH-1:0];
   dffer #(`RNG_CTRL_WIDTH) u_rng_ctrl_dffer (
       apb4.pclk,
       apb4.presetn,
