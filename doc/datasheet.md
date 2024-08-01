@@ -69,6 +69,8 @@ If wanting to stop generating valid random numbers, software need to set the val
 ```c
 rng.SEED = 0x0
 ```
+complete driver and test codes in [driver](../driver/) dir. 
+
 ### Resoureces
 ### References
 ### Revision History

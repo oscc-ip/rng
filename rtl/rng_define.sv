@@ -20,12 +20,12 @@
  * RNG_SEED:
  * BITS:   | 31:0 |
  * FIELDS: | SEED |
- * PERMS:  | W    |
+ * PERMS:  | WO   |
  * ---------------------
  * RNG_VAL:
  * BITS:   | 31:0 |
  * FIELDS: | VAL  |
- * PERMS:  | R    |
+ * PERMS:  | RO   |
  * ---------------------
 */
 
