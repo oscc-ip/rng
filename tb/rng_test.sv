@@ -8,11 +8,7 @@
 // MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 // See the Mulan PSL v2 for more details.
 
-`ifndef INC_RNG_TEST_SV
-`define INC_RNG_TEST_SV
-
-`include "apb4_master.sv"
-`include "rng_define.sv"
+`include "rng_define.svh"
 
 class RNGTest extends APB4Master;
   string                        name;
@@ -76,5 +72,3 @@ task automatic RNGTest::test_gen_random_num();
   end while (1);
 
 endtask
-
-`endif

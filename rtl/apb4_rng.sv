@@ -8,9 +8,7 @@
 // MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
 // See the Mulan PSL v2 for more details.
 
-`include "register.sv"
-`include "lfsr.sv"
-`include "rng_define.sv"
+`include "rng_define.svh"
 
 module apb4_rng (
     apb4_if.slave apb4
